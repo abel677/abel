@@ -1,0 +1,68 @@
+	HEROKU
+abelandrade677@gmail.com
+*#1315812766*#abel
+
+	gitHub
+abelandrade677@gmail.com
+*#*31315812766*#*#
+
+git config --global user.name "ABEL ANDRADE"
+git config --global user.email abelandrade677@gmail.com
+
+crar repositorio 
+clonar el proyecto https://github.com/thomasklz/quintoNivel-Angular01.git
+
+eliminar la carpeta .git
+
+
+code .
+git init
+git add
+git commit -m "descripcion"
+
+
+git remote add origin https://github.com/abel677/practica.git
+git push -u origin master
+npm install
+
+heroku
+create a new app
+conectar con gitGub
+activar automatic deploys
+
+create a archive server.js
+
+const path = require('path');
+const express = require('express');
+const app = express();
+
+app.use(express.static(__dirname + '/dist/practica01'));
+
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname + '/dist/practica01/index.html'));
+});
+
+app.listen(process.env.PORT || 5000);
+
+npm install --save express path
+
+Compilar la aplicación en modo producción 
+
+package.json configurar
+
+"start": "ng serve" => "star": "node server.js"
+"build": "ng build" => "build": "ng build --prod"
+
+ng build --prod
+
+git add .
+git push origin master
+
+fin
+
+
+
+
+
+
+
